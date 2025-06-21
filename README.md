@@ -140,5 +140,32 @@ body {
 ## apis routes/api_v1.php
 - En este archivo estan las apis las cuales podemos comunicarnos desde el exterior para realizar alguna peticion tenga encuenta que para crear, editar o eliminar debe tener rol de administrador
 
-##  Colección de Postman
+##  Colección de Postman local
 - se encuentra en la raiz del proyecto `Smart Apis.postman_collection.json`
+http://localhost:8000/api/register
+
+http://localhost:8000/api/->endpoint
+ejemplo
+http://localhost:8000/api/register
+
+
+
+
+
+##  Colección de Postman Servidor
+- se encuentra en la raiz del proyecto `Smart Apis_Servidor.postman_collection.json`
+
+api.divideya.com/public/api/->endpoint
+ejemplo
+api.divideya.com/public/api/register
+
+
+
+## Importacion de la colección d eApis
+- abres postman 
+- la izquierda hay un boton que se llama Importar selecciona
+- se abre una nueva ventana seleccionas file 
+- buscas el archivo de las apis 
+- seleccionar y te carga los endpoint
+
+

@@ -8,8 +8,6 @@ use App\Http\Controllers\Api\V1\product\ProductController;
 
 Route::post('/register', [UsersController::class, 'register']);
 Route::post('/login', [UsersController::class, 'login']);
-
-
 Route::post('/logout', [UsersController::class, 'logout'])->middleware('auth:sanctum');
 
 Route::middleware(['auth:sanctum'])->group(function () {
