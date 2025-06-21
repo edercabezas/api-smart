@@ -9,7 +9,7 @@ Esta api Rest esta desarrollada en la Version 10 de laravel permite desde el reg
 
 ## Instalaciones
 
-- Clonar el proyecto desde GitHub `git clone https://github.com/tuusuario/api-inventario.git`
+- Clonar el proyecto desde GitHub `git clone https://github.com/edercabezas/api-smart.git`
 - Ingresar a la carpeta del proyecto `cd api-smart`
 - Composer es el manejador de paquetes de php para instalar als dependencias `composer install`
 - Cambiar el nombre  de `env.example a .env` el punto siempre debe estar es donde estan las variables de entorno y configuracion de la base de datos 
