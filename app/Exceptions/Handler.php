@@ -99,7 +99,7 @@ class Handler extends ExceptionHandler
 
     protected function unauthenticated($request, AuthenticationException $exception)
     {
-        return $this->errorResponse('unauthenticated', 401);
+        return $this->errorResponse('Valida que el token sea el Correcto!', 401);
     }
 
     protected function convertValidationExceptionToResponse(ValidationException $e, $request)

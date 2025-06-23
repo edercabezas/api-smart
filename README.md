@@ -12,9 +12,9 @@ Esta api Rest esta desarrollada en la Version 10 de laravel permite desde el reg
 - Clonar el proyecto desde GitHub `git clone https://github.com/edercabezas/api-smart.git`
 - Ingresar a la carpeta del proyecto `cd api-smart`
 - Composer es el manejador de paquetes de php para instalar als dependencias `composer install`
-- Cambiar el nombre  de `env.example a .env` el punto siempre debe estar es donde estan las variables de entorno y configuracion de la base de datos 
-- este comando es apra generar una nueva llave `php artisan key:generate`
-- Este comando es para generar todas las migracios primero asegurate de crear la base de datos sea en `Mysql, postgres etc`,  y configura las credenciales en el .env y por ultimo corre el comando este te generara las tablas `php artisan migrate`
+- Cambiar el nombre  de `env.example a .env` el punto siempre debe estar es donde estan las variables de entorno y configuracion de la base de datos y configura los datos de tu base de datos
+- este comando es para generar una nueva llave `php artisan key:generate`
+- Este comando es para generar todas las migracios primero asegurate de crear la base de datos sea en `Mysql, postgres etc`,  y configura las credenciales en el .env y por ultimo corre este comando `php artisan migrate` este te genera las migraciones de las tablas 
 - Correr el proyecto en local `php artisan serve`
 
 ## Funcionalidades Usuario
@@ -26,23 +26,16 @@ Esta api Rest esta desarrollada en la Version 10 de laravel permite desde el reg
   "password_confirmation": "password123",
   "admin": "admin"
 }
-{
-  "name": "User Cortes",
-  "email": "user@example.com",
-  "password": "password123",
-  "password_confirmation": "password123",
-  "admin": "user"
-}
 
 - Autenticacion de usuarios y obtencion de token del usuario. POST `http://localhost:8000/api/login`
 {
-  "email": "pedro@example.com",
+  "email": "admin@example.com",
   "password": "password123"
 }
 - Cierre de Sesión. POST `http://localhost:8000/api/logout`
 
 {
-    Authorization: Bearer 3|3uFZ0VxTa4cWYZHE9vMSLWdtbooEzYP6hhMuP1loa6901f2d `Token de usuario autenticado cada vez que se autentique kenera nuevo token`
+    Authorization: Bearer 3|3uFZ0VxTa4cWYZHE9vMSLWdtbooEzYP6hhMuP1loa6901f2d `Token de usuario autenticado cada vez que se autentique genera un nuevo token`
 } 
 
 ## Funcionalidad de categoria
@@ -82,7 +75,7 @@ body {
     }
 
 ## Funcionalidad de productos
-- Rehgistro de nuevo producto asociando la categoria (Admin). POST `http://localhost:8000/api/products`
+- Registro de nuevo producto asociando la categoria (Admin). POST `http://localhost:8000/api/products`
   header{
     Authorization: Bearer 9|FXCcYCjRdGORD8ZPcFy9uEZeMToME8VMQ6nDbSlR6db6883f
     }
@@ -141,8 +134,7 @@ body {
 - En este archivo estan las apis las cuales podemos comunicarnos desde el exterior para realizar alguna peticion tenga encuenta que para crear, editar o eliminar debe tener rol de administrador
 
 ##  Colección de Postman local
-- se encuentra en la raiz del proyecto `Smart Apis.postman_collection.json`
-http://localhost:8000/api/register
+- se encuentra en la raiz del proyecto `Smart Api_local_collection.json`
 
 http://localhost:8000/api/->endpoint
 ejemplo
@@ -161,7 +153,7 @@ api.divideya.com/public/api/register
 
 
 
-## Importacion de la colección d eApis
+## Importación de la colección de Apis
 - abres postman 
 - la izquierda hay un boton que se llama Importar selecciona
 - se abre una nueva ventana seleccionas file 
